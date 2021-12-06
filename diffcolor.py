@@ -64,7 +64,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             painter.end()
 
     def drawCircle(self, qp: QPainter):
-        colored = QColor(0xffff00)
+        colored = QColor(randint(0, 0xffff00))
         qp.setPen(colored)
         qp.setBrush(colored)
 
